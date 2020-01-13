@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+	<class abstract="false" name="com.aqm.staf.library.databin.HomeEntity_Intermediary" table="HomeEntity_Intermediary">
+		<id name="Reference" column="Reference" type="string">
+		</id>
+		<property name="TestScenario" column="TestScenario" type="string" />
+		<property name="RowNumber" column="RowNumber" type="integer" />
+		<property name="Action" column="Action" type="string" />
+		<property name="StepGroup" column="StepGroup" type="string" />
+		<property name="ParentKey" column="ParentKey" type="string" />
+		<property name="ChildKey" column="ChildKey" type="string" />
+		<property name="ConfigExecute" column="ConfigExecute" type="string" />
+		<dynamic-component insert="true" name="customProperties" optimistic-lock="true" unique="false" update="true">
+			<property name="LOBName" column="LOBName" type="string" />
+			<property name="DependencyForProductName" column="DependencyForProductName" type="string" />
+			<property name="AlertPopupWindow" column="AlertPopupWindow" type="string" />
+			<property name="MyDashBoard" column="MyDashBoard" type="string" />
+			<property name="Products" column="Products" type="string" />
+			<property name="QuickServices" column="QuickServices" type="string" />
+			<property name="AboutUs" column="AboutUs" type="string" />
+			<property name="Help" column="Help" type="string" />
+			<property name="BuyOnline" column="BuyOnline" type="string" />
+			<property name="QuickrenewalORPayment" column="QuickrenewalORPayment" type="string" />
+			<property name="CallMe" column="CallMe" type="string" />
+			<property name="SearchBy" column="SearchBy" type="string" />
+			<property name="PolicyQuoteNoField" column="PolicyQuoteNoField" type="string" />
+			<property name="Product" column="Product" type="string" />
+			<property name="LOBRural" column="LOBRural" type="string" />
+			<property name="LOBHealth" column="LOBHealth" type="string" />
+			<property name="LOBMiscellaneous" column="LOBMiscellaneous" type="string" />
+			<property name="LOBMarine" column="LOBMarine" type="string" />
+			<property name="LOBMotor" column="LOBMotor" type="string" />
+			<property name="LOBTravel" column="LOBTravel" type="string" />
+			<property name="RenewalsTab" column="RenewalsTab" type="string" />
+			<property name="ManageQuotesTab" column="ManageQuotesTab" type="string" />
+			<property name="ManagePolicyTab" column="ManagePolicyTab" type="string" />
+			<property name="MakePaymentTab" column="MakePaymentTab" type="string" />
+			<property name="ViewReportsTab" column="ViewReportsTab" type="string" />
+			<property name="QutORPolcyNornwlTab" column="QutORPolcyNornwlTab" type="string" />
+			<property name="ProductrnwlTab" column="ProductrnwlTab" type="string" />
+			<property name="ExpiryDateFromrnwlTab" column="ExpiryDateFromrnwlTab" type="string" />
+			<property name="ExpiryDateTornwlTab" column="ExpiryDateTornwlTab" type="string" />
+			<property name="ContinueButton" column="ContinueButton" type="string" />
+			<property name="SearchButton" column="SearchButton" type="string" />
+			<property name="ResetButton" column="ResetButton" type="string" />
+			<property name="QuoteNoMngQuotTab" column="QuoteNoMngQuotTab" type="string" />
+			<property name="ProductMngQuotTab" column="ProductMngQuotTab" type="string" />
+			<property name="FromDateMngQuotTab" column="FromDateMngQuotTab" type="string" />
+			<property name="ToDateMngQuotTab" column="ToDateMngQuotTab" type="string" />
+			<property name="StatusMngQuotTab" column="StatusMngQuotTab" type="string" />
+			<property name="PlcyNoQuotNoMngPlcyTab" column="PlcyNoQuotNoMngPlcyTab" type="string" />
+			<property name="ProductMngPlcyTab" column="ProductMngPlcyTab" type="string" />
+			<property name="FromDateMngPlcyTab" column="FromDateMngPlcyTab" type="string" />
+			<property name="ToDateMngPlcyTab" column="ToDateMngPlcyTab" type="string" />
+			<property name="StatusmngPlcyTab" column="StatusmngPlcyTab" type="string" />
+			<property name="QutnoMakPaymnt" column="QutnoMakPaymnt" type="string" />
+			<property name="ProductMakPaymnt" column="ProductMakPaymnt" type="string" />
+			<property name="FromDateMakPaymnt" column="FromDateMakPaymnt" type="string" />
+			<property name="ToDateMakPaymnt" column="ToDateMakPaymnt" type="string" />
+			<property name="StatusMakPaymnt" column="StatusMakPaymnt" type="string" />
+			<property name="SlctprportViewRprt" column="SlctprportViewRprt" type="string" />
+			<property name="FromdateViewRprt" column="FromdateViewRprt" type="string" />
+			<property name="ToDateViewRprt" column="ToDateViewRprt" type="string" />
+			<property name="PrdctViewRprt" column="PrdctViewRprt" type="string" />
+			<property name="StatusViewRprt" column="StatusViewRprt" type="string" />
+			<property name="ItemsPerPage" column="ItemsPerPage" type="string" />
+			<property name="SrchNo" column="SrchNo" type="string" />
+			<property name="SrchQuoteNo" column="SrchQuoteNo" type="string" />
+			<property name="SrchPolicyHolder" column="SrchPolicyHolder" type="string" />
+			<property name="SrchStartDate" column="SrchStartDate" type="string" />
+			<property name="SrchStatus" column="SrchStatus" type="string" />
+			<property name="SrchActions" column="SrchActions" type="string" />
+			<property name="SrchClone" column="SrchClone" type="string" />
+			<property name="Status" column="Status" type="string" />
+			<property name="QuoteNo" column="QuoteNo" type="string" />
+			<property name="ProductCategoryName" column="ProductCategoryName" type="string" />
+			<property name="BuyOnlineButton" column="BuyOnlineButton" type="string" />
+			<property name="Dashboard" column="Dashboard" type="string" />
+			<property name="byuOnline" column="byuOnline" type="string" />
+			<property name="Renewal" column="Renewal" type="string" />
+			<property name="ProductList" column="ProductList" type="string" />
+			<property name="RenewalSearch" column="RenewalSearch" type="string" />
+			<property name="RenewalAction" column="RenewalAction" type="string" />
+			<property name="SaveAndCalculatePremium" column="SaveAndCalculatePremium" type="string" />
+			<property name="ApproveAndPay" column="ApproveAndPay" type="string" />
+			<property name="RenewAdd" column="RenewAdd" type="string" />
+			<property name="CollectPremium" column="CollectPremium" type="string" />
+			<property name="ConfigPolicyNo" column="ConfigPolicyNo" type="boolean" />
+			<property name="PolicyNo" column="PolicyNo" type="string" />
+			<property name="ConfigRenewalQuoteNo" column="ConfigRenewalQuoteNo" type="boolean" />
+			<property name="RenewalQuoteNo" column="RenewalQuoteNo" type="string" />
+			<property name="ConfigTransactionIDNo" column="ConfigTransactionIDNo" type="boolean" />
+			<property name="TransactionIDNo" column="TransactionIDNo" type="string" />
+			<property name="ConfigTransactionAmount" column="ConfigTransactionAmount" type="boolean" />
+			<property name="TransactionAmount" column="TransactionAmount" type="string" />
+			<property name="ConfigTransactionStatus" column="ConfigTransactionStatus" type="boolean" />
+			<property name="TransactionStatus" column="TransactionStatus" type="string" />
+			<property name="Pancard" column="Pancard" type="string" />
+		</dynamic-component>
+	</class>
+</hibernate-mapping>

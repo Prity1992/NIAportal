@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+	<class abstract="false" name="com.aqm.staf.library.databin.ClaimIntimateEntity" table="ClaimIntimateEntity">
+		<id name="Reference" column="Reference" type="string">
+		</id>
+		<property name="TestScenario" column="TestScenario" type="string" />
+		<property name="RowNumber" column="RowNumber" type="integer" />
+		<property name="Action" column="Action" type="string" />
+		<property name="StepGroup" column="StepGroup" type="string" />
+		<property name="ParentKey" column="ParentKey" type="string" />
+		<property name="ChildKey" column="ChildKey" type="string" />
+		<property name="ConfigExecute" column="ConfigExecute" type="string" />
+		<dynamic-component insert="true" name="customProperties" optimistic-lock="true" unique="false" update="true">
+			<property name="policyNumberDropdown" column="policyNumberDropdown" type="string" />
+			<property name="DateOfLoss" column="DateOfLoss" type="string" />
+			<property name="TimeOfLoss" column="TimeOfLoss" type="string" />
+			<property name="TypeOfLoss" column="TypeOfLoss" type="string" />
+			<property name="NatureOfLoss" column="NatureOfLoss" type="string" />
+			<property name="PlaceOfLoss" column="PlaceOfLoss" type="string" />
+			<property name="EstimatedLoss" column="EstimatedLoss" type="string" />
+			<property name="CancelButton" column="CancelButton" type="string" />
+			<property name="ResetButton" column="ResetButton" type="string" />
+			<property name="IntimateButton" column="IntimateButton" type="string" />
+		</dynamic-component>
+	</class>
+</hibernate-mapping>

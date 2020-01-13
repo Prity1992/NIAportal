@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+	<class abstract="false" name="com.aqm.staf.library.databin.AdditionalDetailEntity" table="AdditionalDetailEntity">
+		<id name="Reference" column="Reference" type="string">
+		</id>
+		<property name="TestScenario" column="TestScenario" type="string" />
+		<property name="RowNumber" column="RowNumber" type="integer" />
+		<property name="Action" column="Action" type="string" />
+		<property name="StepGroup" column="StepGroup" type="string" />
+		<property name="ParentKey" column="ParentKey" type="string" />
+		<property name="ChildKey" column="ChildKey" type="string" />
+		<property name="ConfigExecute" column="ConfigExecute" type="string" />
+		<dynamic-component insert="true" name="customProperties" optimistic-lock="true" unique="false" update="true">
+			<property name="LOBName" column="LOBName" type="string" />
+			<property name="ProductName" column="ProductName" type="string" />
+			<property name="AdditionalDetailsDropdown" column="AdditionalDetailsDropdown" type="string" />
+			<property name="DependencyForPaymentPolicyHolderName" column="DependencyForPaymentPolicyHolderName" type="string" />
+			<property name="RelationType" column="RelationType" type="string" />
+			<property name="Occupation" column="Occupation" type="string" />
+			<property name="Height" column="Height" type="string" />
+			<property name="Weight" column="Weight" type="string" />
+			<property name="NatureofID" column="NatureofID" type="string" />
+			<property name="IdDocNo" column="IdDocNo" type="string" />
+			<property name="BrowseFile" column="BrowseFile" type="string" />
+			<property name="UploadButton" column="UploadButton" type="string" />
+			<property name="AddtionalCoverTab" column="AddtionalCoverTab" type="string" />
+			<property name="Name" column="Name" type="string" />
+			<property name="OccupationDaughter" column="OccupationDaughter" type="string" />
+			<property name="NomineeName" column="NomineeName" type="string" />
+			<property name="NomineeName1" column="NomineeName1" type="string" />
+			<property name="RelationWithNominee" column="RelationWithNominee" type="string" />
+			<property name="RelationWithNominee1" column="RelationWithNominee1" type="string" />
+			<property name="FirstName" column="FirstName" type="string" />
+			<property name="LastName" column="LastName" type="string" />
+			<property name="Engineno" column="Engineno" type="string" />
+			<property name="Chasisno" column="Chasisno" type="string" />
+			<property name="ColourasperRCBook" column="ColourasperRCBook" type="string" />
+			<property name="colourOfVehicle" column="colourOfVehicle" type="string" />
+			<property name="PassportNo" column="PassportNo" type="string" />
+			<property name="PassporTexpirydate" column="PassporTexpirydate" type="string" />
+			<property name="VisaType" column="VisaType" type="string" />
+			<property name="OccupationT" column="OccupationT" type="string" />
+			<property name="NameOfThenominee" column="NameOfThenominee" type="string" />
+			<property name="Relationshipnominee" column="Relationshipnominee" type="string" />
+			<property name="YesRadio" column="YesRadio" type="string" />
+			<property name="NoRadio" column="NoRadio" type="string" />
+			<property name="TravellerDetailsDropdown" column="TravellerDetailsDropdown" type="string" />
+			<property name="OtherdetailsDropDown" column="OtherdetailsDropDown" type="string" />
+			<property name="Daughter1dropdown" column="Daughter1dropdown" type="string" />
+			<property name="Child1dropdown" column="Child1dropdown" type="string" />
+			<property name="PhysicianInfoTab" column="PhysicianInfoTab" type="string" />
+			<property name="OccupationChild" column="OccupationChild" type="string" />
+			<property name="YesRadioBTN" column="YesRadioBTN" type="string" />
+			<property name="NoRadioBTN" column="NoRadioBTN" type="string" />
+			<property name="MaleChildRadioBTN" column="MaleChildRadioBTN" type="string" />
+			<property name="FemaleChildRadioBTN" column="FemaleChildRadioBTN" type="string" />
+			<property name="ProposerDateOfBirth" column="ProposerDateOfBirth" type="string" />
+			<property name="AadharnoRadioBTN" column="AadharnoRadioBTN" type="string" />
+			<property name="AgreetoLinkRadioBTN" column="AgreetoLinkRadioBTN" type="string" />
+			<property name="SubmitBTN" column="SubmitBTN" type="string" />
+			<property name="Universityname" column="Universityname" type="string" />
+			<property name="AddressOfBuildingTab" column="AddressOfBuildingTab" type="string" />
+			<property name="UniversityAddress" column="UniversityAddress" type="string" />
+			<property name="SponsorName" column="SponsorName" type="string" />
+			<property name="SponsorAddress" column="SponsorAddress" type="string" />
+			<property name="YesBuildingRadiobtn" column="YesBuildingRadiobtn" type="string" />
+			<property name="NoBuildingRadiobtn" column="NoBuildingRadiobtn" type="string" />
+			<property name="BuildingNOStreetTextFiled" column="BuildingNOStreetTextFiled" type="string" />
+			<property name="LocalityAddBuildingTextfield" column="LocalityAddBuildingTextfield" type="string" />
+			<property name="PincodeAddBuildingTextFiled" column="PincodeAddBuildingTextFiled" type="string" />
+			<property name="FinancierDetailsTab" column="FinancierDetailsTab" type="string" />
+			<property name="YesfinancierRadio" column="YesfinancierRadio" type="string" />
+			<property name="NofinancierRadio" column="NofinancierRadio" type="string" />
+			<property name="LoactionAddressDropDown" column="LoactionAddressDropDown" type="string" />
+			<property name="IsTheLoacAddSame" column="IsTheLoacAddSame" type="string" />
+			<property name="YearOfConstruction" column="YearOfConstruction" type="string" />
+			<property name="AddressOfShopTab" column="AddressOfShopTab" type="string" />
+			<property name="TypeOfShop" column="TypeOfShop" type="string" />
+			<property name="AddressOfOfficeTab" column="AddressOfOfficeTab" type="string" />
+			<property name="OwnerRadioBtnTab" column="OwnerRadioBtnTab" type="string" />
+			<property name="TenantRadioBtnTab" column="TenantRadioBtnTab" type="string" />
+			<property name="YesOffAddressTab" column="YesOffAddressTab" type="string" />
+			<property name="NoOffAddressTab" column="NoOffAddressTab" type="string" />
+			<property name="OfficeAddTextFieldTab" column="OfficeAddTextFieldTab" type="string" />
+			<property name="PinCodeoffiAddTextFieldTab" column="PinCodeoffiAddTextFieldTab" type="string" />
+			<property name="additionalVehicleDetails" column="additionalVehicleDetails" type="string" />
+			<property name="RegistrationNumber1" column="RegistrationNumber1" type="string" />
+			<property name="RegistrationNumber2" column="RegistrationNumber2" type="string" />
+			<property name="RegistrationNumber3" column="RegistrationNumber3" type="string" />
+			<property name="RegistrationNumber4" column="RegistrationNumber4" type="string" />
+			<property name="personaldetailsDropdown" column="personaldetailsDropdown" type="string" />
+			<property name="DateofRegistration" column="DateofRegistration" type="string" />
+			<property name="AdditionalDetailsDropdownCPA" column="AdditionalDetailsDropdownCPA" type="string" />
+			<property name="NameOfTheInsured" column="NameOfTheInsured" type="string" />
+			<property name="OccupationDropDownCPA" column="OccupationDropDownCPA" type="string" />
+			<property name="DoyouholdvalidDrivingLicense" column="DoyouholdvalidDrivingLicense" type="string" />
+			<property name="LicenseTypeofOwnerDriverCPA" column="LicenseTypeofOwnerDriverCPA" type="string" />
+			<property name="OwnerDriverDrivingLicenseNoCPA" column="OwnerDriverDrivingLicenseNoCPA" type="string" />
+			<property name="OwnerDriverLicenseIssueDateCPA" column="OwnerDriverLicenseIssueDateCPA" type="string" />
+			<property name="OwnerDriverLicenseExpiryDateCPA" column="OwnerDriverLicenseExpiryDateCPA" type="string" />
+			<property name="LicenseIssuingAuthorityForOwnerDriverCPA" column="LicenseIssuingAuthorityForOwnerDriverCPA" type="string" />
+			<property name="NomineeNameCPA" column="NomineeNameCPA" type="string" />
+			<property name="RelationshipWithTheInsuredCPA" column="RelationshipWithTheInsuredCPA" type="string" />
+		</dynamic-component>
+	</class>
+</hibernate-mapping>

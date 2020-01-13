@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+	<class abstract="false" name="com.aqm.staf.library.databin.PremiumCalculatorEntity" table="PremiumCalculatorEntity">
+		<id name="Reference" column="Reference" type="string">
+		</id>
+		<property name="TestScenario" column="TestScenario" type="string" />
+		<property name="RowNumber" column="RowNumber" type="integer" />
+		<property name="Action" column="Action" type="string" />
+		<property name="StepGroup" column="StepGroup" type="string" />
+		<property name="ParentKey" column="ParentKey" type="string" />
+		<property name="ChildKey" column="ChildKey" type="string" />
+		<property name="ConfigExecute" column="ConfigExecute" type="string" />
+		<dynamic-component insert="true" name="customProperties" optimistic-lock="true" unique="false" update="true">
+			<property name="LOBName" column="LOBName" type="string" />
+			<property name="policyStartDate" column="policyStartDate" type="string" />
+			<property name="policyEndDate" column="policyEndDate" type="string" />
+			<property name="BasicInformationTab" column="BasicInformationTab" type="string" />
+			<property name="BasicInformationTab1" column="BasicInformationTab1" type="string" />
+			<property name="PlanDropdown" column="PlanDropdown" type="string" />
+			<property name="sumInsuredInRs" column="sumInsuredInRs" type="string" />
+			<property name="sumInsuredInRs1" column="sumInsuredInRs1" type="string" />
+			<property name="sumInsuredInRupee" column="sumInsuredInRupee" type="string" />
+			<property name="cityofResidence" column="cityofResidence" type="string" />
+			<property name="FloaterRadioBTN" column="FloaterRadioBTN" type="string" />
+			<property name="IndividualRadioBTN" column="IndividualRadioBTN" type="string" />
+			<property name="MemberInformationTab" column="MemberInformationTab" type="string" />
+			<property name="proposer18yearsto50years" column="proposer18yearsto50years" type="string" />
+			<property name="ThresholdLimitValue" column="ThresholdLimitValue" type="string" />
+			<property name="sumInsuredProposer" column="sumInsuredProposer" type="string" />
+			<property name="ChildAge" column="ChildAge" type="string" />
+			<property name="daughter1AgeLimit" column="daughter1AgeLimit" type="string" />
+			<property name="dependentType" column="dependentType" type="string" />
+			<property name="SumInsuredInformation" column="SumInsuredInformation" type="string" />
+			<property name="suminsuredinformation1" column="suminsuredinformation1" type="string" />
+			<property name="iaGreeWithThe" column="iaGreeWithThe" type="string" />
+			<property name="saveCalculatePremium" column="saveCalculatePremium" type="string" />
+			<property name="ContinueButton" column="ContinueButton" type="string" />
+			<property name="childAddBTN" column="childAddBTN" type="string" />
+			<property name="ChildDOB" column="ChildDOB" type="string" />
+			<property name="SumInsuredForChild" column="SumInsuredForChild" type="string" />
+			<property name="SumInsuredDateOfBirth" column="SumInsuredDateOfBirth" type="string" />
+			<property name="SumInsuredForPersonalAccident" column="SumInsuredForPersonalAccident" type="string" />
+			<property name="SumInsuredForHospitalExpensesDueToRoadAccident" column="SumInsuredForHospitalExpensesDueToRoadAccident" type="string" />
+			<property name="SIForHospExpensesDueToAccntInCourseOfEmpExtn" column="SIForHospExpensesDueToAccntInCourseOfEmpExtn" type="string" />
+			<property name="SIForHospExpensesForAnyOtherAccident" column="SIForHospExpensesForAnyOtherAccident" type="string" />
+			<property name="TotalAccidentSumInsuredInRs" column="TotalAccidentSumInsuredInRs" type="string" />
+			<property name="CoverageRequiredFor" column="CoverageRequiredFor" type="string" />
+			<property name="GrossMonthlyIncomeOfTheProposer" column="GrossMonthlyIncomeOfTheProposer" type="string" />
+			<property name="OccupationOfTheProposer" column="OccupationOfTheProposer" type="string" />
+			<property name="SelfProposerDOB" column="SelfProposerDOB" type="string" />
+		</dynamic-component>
+	</class>
+</hibernate-mapping>
